@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/v0.0.1/flaticon.eot");
+    src: url("../fonts/v0.0.1/flaticon.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/v0.0.1/flaticon.woff") format("woff"),
+         url("../fonts/v0.0.1/flaticon.ttf") format("truetype"),
+         url("../fonts/v0.0.1/flaticon.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("../fonts/v0.0.1/flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+[class^="fi-"]:before, [class*=" fi-"]:before,
+[class^="fi-"]:after, [class*=" fi-"]:after {   
+    font-family: Flaticon;
+    font-size: inherit;
+    font-style: normal;
+}
+
+.fi-speaker:before { content: "\f100"; }
+.fi-like:before { content: "\f101"; }
+.fi-avatar:before { content: "\f102"; }
+.fi-loupe:before { content: "\f103"; }
+.fi-clock:before { content: "\f104"; }
+.fi-images:before { content: "\f105"; }
+.fi-share:before { content: "\f106"; }
+.fi-rss:before { content: "\f107"; }
+.fi-cancel:before { content: "\f108"; }
+.fi-right-arrow:before { content: "\f109"; }
+.fi-left-arrow:before { content: "\f10a"; }
+.fi-check:before { content: "\f10b"; }
+.fi-database:before { content: "\f10c"; }
+.fi-map-pin:before { content: "\f10d"; }
+.fi-map:before { content: "\f10e"; }
+.fi-signs:before { content: "\f10f"; }
+.fi-phone:before { content: "\f110"; }
+.fi-android-store:before { content: "\f111"; }
+.fi-apple-store:before { content: "\f112"; }
+.fi-chat:before { content: "\f113"; }
+.fi-google-plus:before { content: "\f114"; }
+.fi-instagram:before { content: "\f115"; }
+.fi-facebook:before { content: "\f116"; }
+.fi-whatsapp:before { content: "\f117"; }
+.fi-youtube:before { content: "\f118"; }
+.fi-twitter:before { content: "\f119"; }
+.fi-telegram:before { content: "\f11a"; }

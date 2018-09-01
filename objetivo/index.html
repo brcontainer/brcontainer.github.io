@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objetivo Peruíbe</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <style type="text/css">
+    body, html {
+        height: 100%;
+    }
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #f9f9f9 !important;
+    }
+
+    body> .v-container > section {
+        margin-bottom: 80px;
+    }
+
+    h1, h2, h3, h4, dt {
+        font-weight: bold;
+    }
+
+    h1, h2, h3, h4, dt, #main-nav {
+        text-transform: uppercase;
+    }
+
+    #main-nav {
+    }
+
+    #main-nav .v-nav-item {
+        height: 80px;
+        line-height: 80px;
+    }
+
+    #main-nav .v-container,
+    #main-nav .v-navbar-left,
+    #main-nav .v-navbar-right {
+        height: 80px;
+    }
+
+    .section-items .v-card {
+        height: 445px;
+    }
+    .section-items .figure {
+        width: 100%;
+        overflow: hidden;
+    }
+    .section-items .figure img {
+        width: 100%;
+    }
+
+    .section-items .content {
+        padding: 20px 30px 30px;
+    }
+    #main-footer {
+        background-color: #20232e;
+        color: #fff;
+    }
+    #main-footer > .v-row {
+        padding: 85px 15px !important;
+    }
+    #main-footer a {
+        text-decoration: none;
+        color: #ab9a9a;
+    }
+    #main-footer dl {
+        padding-right: 35px !important;
+        padding-left: 35px !important;
+        margin: 0;
+    }
+    #main-footer dt {
+        padding: 14px;
+        font-size: 110%;
+        margin: 0;
+    }
+    #main-footer dd {
+        padding: 5px 5px 5px 20px;
+        margin: 0;
+    }
+
+    .footer-wrap {
+        background-color: #1b1d26;
+        padding: 15px 0;
+        text-align: center;
+    }
+    section.registration {
+        background: url(images/bg2.jpg);
+        padding: 50px;
+        border-radius: 5px !important;
+    }
+    section.registration .v-row h4 {
+        padding: 0;
+        margin: 0;
+    }
+    section.registration .v-row > div:first-child h4 {
+        font-size: 32px;
+    }
+    section.registration .v-row > div:last-child {
+        text-align: center;
+    }
+    section.primary > :last-child {
+        height: 512px;
+    }
+    .hero {
+        background: #c0c0c0 url(images/banner-1.png) no-repeat;
+        background-size: cover;
+        height: 98%;
+        height: -webkit-calc(100% - 150px);
+        height: calc(100% - 150px);
+    }
+    .hero-content {
+        padding: 100px 50px;
+        color: #fff;
+    }
+    .hero-content h2 {
+        font-size: 32pt;
+    }
+    .hero-content h3 {
+        font-size: 12pt;
+        padding-bottom: 30px;
+        max-width: 600px;
+    }
+
+    .section-items h2 {
+        margin: 20px 6px 6px;
+        height: 64px;
+        line-height: 64px;
+    }
+
+    .video-texto {
+        padding: 90px 0;
+        text-align: center;
+    }
+
+    @media (min-width:768px) {
+        .section-items > :first-child {
+            padding-right: 8px !important;
+        }
+
+        .section-items > :nth-child(2) {
+            padding-left: 4px !important;
+            padding-right: 4px !important;
+        }
+
+        .section-items > :last-child {
+            padding-left: 8px !important;
+        }
+
+        .section-items.primary > :last-child > div {
+            height: 598px;
+        }
+        .video-institucional [class^="v-col-"], .video-institucional [class*=" v-col-"] {
+            min-height: 300px;
+        }
+    }
+    .last-news {
+        border-top-left-radius: 5px !important;
+        border-top-right-radius: 5px !important;
+        position: relative;
+        top: -70px;
+        height: 570px;
+        overflow: hidden;
+    }
+    @media (max-width: 768px) {
+        .last-news {
+            top: 0;
+            height: auto;
+        }
+        section.primary, .section-items .v-card {
+            height: auto;
+        }
+    }
+    .last-news h2 {
+        margin: 0;
+        height: 64px;
+        line-height: 64px;
+        text-indent: 15px;
+    }
+    .last-news h3 {
+        text-transform: capitalize;
+        font-size: 11pt;
+    }
+    .last-news .list {
+        padding: 10px;
+        border-bottom: 1px solid #c0c0c0;
+        min-height: 100px;
+    }
+
+    [data-ry-video] {
+        display: block;
+    }
+    #main-nav .sup-nav {
+        height: auto;
+        border-bottom: 1px solid #f7f1f1;
+    }
+    #main-nav .sup-nav .v-navbar-left, #main-nav .sup-nav .v-navbar-right {
+        height: auto;
+    }
+
+    #main-nav .sup-nav:after {
+        clear: both;
+        content: "";
+        display: block;
+        height: 0;
+    }
+
+    #main-nav .sup-nav .v-navbar-left {
+        padding-top: 15px;
+        font-size: 0;
+    }
+    #main-nav .sup-nav .v-navbar-right {
+        padding-top: 30px;
+    }
+    #main-nav .sup-nav .v-navbar-left a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 15px;
+        border-right: 1px solid #f7f1f1;
+    }
+    #main-nav i {
+        vertical-align: middle;
+        font-size: 16pt;
+        color: #144077;
+    }
+    #main-nav .fi-phone {
+        margin-right: 15px;
+    }
+    #main-nav .sup-nav .v-navbar-right {
+        font-size: 13pt;
+    }
+    </style>
+</head>
+<body>
+    <!-- navigation -->
+    <nav id="main-nav" class="v-navbar v-navbar-md v-no-padding">
+        <div class="v-container sup-nav">
+            <div class="v-navbar-left">
+                <a href="#"><i class="fi-twitter"></i></a>
+                <a href="#"><i class="fi-facebook"></i></a>
+                <a href="#"><i class="fi-rss"></i></a>
+            </div>
+            <div class="v-navbar-right">
+                <i class="fi-phone"></i> (13) 3455-5555
+            </div>
+        </div>
+        <div class="v-container">
+            <div class="v-navbar-left">
+                <div class="v-navbar-brand">
+                    <img src="images/logo.png" width="100%">
+                </div>
+            </div>
+            <div class="v-navbar-right">
+                <button class="v-navbar-toggle">
+                    <span class="v-sr-only">Toggle navigation</span>
+                    <i class="v-icon-bar"></i>
+                    <i class="v-icon-bar"></i>
+                    <i class="v-icon-bar"></i>
+                </button>
+
+                <div class="v-navbar-items v-navbar-ltr">
+                    <div class="v-navbar-items-inner">
+                        <a href="#" class="v-nav-item">Serviços</a>
+                        <a href="#" class="v-nav-item">Convênios</a>
+                        <a href="#" class="v-nav-item">Contato</a>
+                        
+                        <div class="v-nav-item down-btn">
+                            <a href="#2" class="v-btn v-out-primary v-border-round">Matricular</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation -->
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Simulado aberto</h2>
+            <h3>
+                Para se sair bem nos vestibulares, além de estudar, é importante ter calma e desenvolver uma estratégia para resolver a prova: administrar o tempo, decidir o que resolver primeiro, o que deixar para o final.
+            </h3>
+            <a class="v-btn v-btn-lg v-bg-primary" href="#">Matricule-se</a>
+        </div>
+    </div>
+
+    <div class="v-container">
+        <!-- items -->
+        <section class="primary v-row section-items">
+            <div class="v-col-md-4">
+                <h2>Objetivo Peruíbe</h2>
+                <div class="v-card">
+                    <div class="figure">
+                        <img src="images/1.png">
+                    </div>
+
+                    <div class="content">
+                        <h3>Quem somos</h3>
+                        Localizada em Peruíbe, no bairro Stella Maris, o colégio atende cerca de 3.000 alunos, do Berçário ao Pré-vestibular. Referência em educação, a escola proporciona aos estudantes um profundo contato com a cultura, o esporte e as várias formas de linguagem. Sempre estimulando o protagonismo de crianças e adolescentes.
+                    </div>
+                </div>
+            </div>
+            <div class="v-col-md-4">
+                <h2>Metodologia</h2>
+                <div class="v-card">
+                    <div class="figure">
+                        <img src="images/2.png">
+                    </div>
+
+                    <div class="content">
+                        <h3>Nossa Metodologia</h3>
+                        No Objetivo Peruibe, o aprendizado vai muito além da sala de aula. São módulos, atividades e projetos que enriquecem aquilo que cada aluno vivencia em sala, criando um ambiente de integração e troca contínua entre professores e colegas.
+                    </div>
+                </div>
+            </div>
+            <div class="v-col-md-4">
+                <div class="v-card last-news">
+                    <h2 class="v-bg-primary">Ultimas novidades</h2>
+                    <div class="list">
+                        <time datetime="2001-05-15T19:00">14 de Setembro</time>
+                        <h3>Aluna Objetivo é destaque no Concurso Internacional</h3>
+                    </div>
+                    <div class="list">
+                        <time datetime="2001-05-15T19:00">15 de Setembro</time>
+                        <h3>O Peruíbe@Fest reúne as novidades para os amantes das novas tecnologias, jogos eletrônicos e cultura japonesa</h3>
+                    </div>
+                    <div class="list">
+                        <time datetime="2001-05-15T19:00">17 Setembro</time>
+                        <h3>Simulado ENEM Objetivo</h3>
+                    </div>
+                    <div class="list">
+                        <time datetime="2001-05-15T19:00">22 Setembro</time>
+                        <h3>Exposição Teenager de Universidades e Profissões</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- items -->
+
+        <section class="registration v-card v-bg-primary">
+            <div class="v-row">
+                <div class="v-col-md-9">
+                    <p>Matricule-se já no</p>
+                    <h4>Objetivo</h4>
+                </div>
+                <div class="v-col-md-3">
+                    <a href="#" class="v-btn v-btn-lg">Matricular</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- items -->
+        <section class="v-row section-items">
+            <div class="v-col-md-4">
+                <h2>ABOUT EDUCON</h2>
+                <div class="v-card">
+                    <div class="figure">
+                        <img src="images/aimg30082018152628.jpg">
+                    </div>
+
+                    <div class="content">
+                        <h3>Bring Youth to Fun &amp; Study</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-col-md-4">
+                <h2>Foo bar</h2>
+                <div class="v-card">
+                    <div class="figure">
+                        <img src="images/aimg23082018170428.jpg">
+                    </div>
+
+                    <div class="content">
+                        <h3>Bring Youth to Fun &amp; Study</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-col-md-4">
+                <h2>Foo bar</h2>
+                <div class="v-card">
+                    <div class="figure">
+                        <img src="images/aimg20082018093114.jpg">
+                    </div>
+
+                    <div class="content">
+                        <h3>Bring Youth to Fun &amp; Study</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- items -->
+
+        <section class="v-card v-row video-institucional">
+            <div class="v-col-md-6">
+                <div data-ry-video="3ay75q43D7E"></div>
+            </div>
+
+            <div class="v-col-md-6">
+                <div class="video-texto">
+                    <h3>Bring Youth to Fun &amp; Study</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor incididunt ut labore et.dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer id="main-footer">
+        <div class="v-row">
+
+            <dl class="v-col-md-3">
+                <dt>A Escola</dt>
+                <dd><a href="#">Quem somos</a></dd>
+                <dd><a href="#">História</a></dd>
+                <dd><a href="#">Unidades</a></dd>
+                <dd><a href="#">Metodologia</a></dd>
+                <dd><a href="#">Notícias</a></dd>
+                <dd><a href="#">Agenda</a></dd>
+                <dd><a href="#">Vídeos</a></dd>
+                <dd><a href="#">Horários</a></dd>
+                <dd><a href="#">Matrículas</a></dd>
+                <dd><a href="#">DNA ex-alunos</a></dd>
+            </dl>
+            <dl class="v-col-md-3">
+                <dt>Cursos</dt>
+                <dd><a href="#">Berçário</a></dd>
+                <dd><a href="#">Infantil</a></dd>
+                <dd><a href="#">Fundamental I</a></dd>
+                <dd><a href="#">Fundamental II</a></dd>
+                <dd><a href="#">Médio</a></dd>
+                <dd><a href="#">Pré-vestibular</a></dd>
+                <dd><a href="#">Bilíngue</a></dd>
+            </dl>
+            <dl class="v-col-md-3">
+                <dt>Diferenciais</dt>
+                <dd><a href="#">Aulas extras</a></dd>
+                <dd><a href="#">Projetos</a></dd>
+                <dd><a href="#">Idiomas</a></dd>
+                <dd><a href="#">Atlética</a></dd>
+                <dd><a href="#">Aprovados</a></dd>
+                <dd><a href="#">Restaurante</a></dd>
+                <dd><a href="#">Toca da Raposa</a></dd>
+                <dd><a href="#">Teatro e Música</a></dd>
+                <dd><a href="#">Connecta vestibular</a></dd>
+            </dl>
+            <dl class="v-col-md-3">
+                <dt>Contato</dt>
+                <dd><a href="#">Fale conosco</a></dd>
+                <dd><a href="#">Trabalhe conosco</a></dd>
+                <dd><a href="#">Localização</a></dd>
+            </dl>
+        </div>
+
+        <p class="footer-wrap">
+            &copy; Todos os direitos reservados 2018
+        </p>
+    </footer>
+
+    <link rel="stylesheet" type="text/css" href="css/victory.min.css">
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+    <script src="js/victory.min.js"></script>
+    <script src="js/responsive-youtube.min.js"></script>
+    <script> ResponsiveYoutube.start(); </script>
+</body>
+</html>
